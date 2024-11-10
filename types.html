@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Types Information</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .auction-card {
+            transition: transform 0.3s ease;
+        }
+        .auction-card:hover {
+            transform: translateY(-5px);
+        }
+        .info-header {
+            font-family: 'Arial Black', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .gradient-bg {
+            background: linear-gradient(145deg, #f3f4f6 0%, #ffffff 100%);
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="grid grid-cols-2 gap-0.5">
+                    <div class="w-2 h-2 bg-red-500 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                </div>
+                <span class="font-semibold text-xl">Cureverse</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/types.html" class="text-gray-600">Information</a>
+                <a href="/index.html" class="text-gray-600">Treatments</a>
+                <a href="/hospitals.html" class="text-gray-600">Hospitals</a>
+                <a href="/stories.html" class="text-gray-600">Stories</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-600">Sign in</button>
+                <button class="bg-red-600 text-white px-4 py-2 rounded-lg"><a href="/contact.html">Contact us</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <div class="text-center py-12 bg-white shadow-sm">
+        <h1 class="info-header text-4xl font-bold mb-4">Types of Cancer</h1>
+        <p class="text-gray-600 max-w-2xl mx-auto">Understanding different types of cancer and their treatments can help you make informed decisions about your health care.</p>
+    </div>
+
+    <!-- Cancer Types Section -->
+    <div class="max-w-7xl mx-auto px-4 pb-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1 -->
+            <div class="bg-white p-6 rounded-lg shadow-md auction-card">
+                <h3 class="text-xl font-bold mb-2">Lung Cancer</h3>
+                <p class="text-gray-600">Common Treatments: Surgery, Radiation Therapy, Chemotherapy, Targeted Therapy, Immunotherapy.</p>
+                <a href="#" class="text-red-600 font-bold mt-4 block">View More</a>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white p-6 rounded-lg shadow-md auction-card">
+                <h3 class="text-xl font-bold mb-2">Breast Cancer</h3>
+                <p class="text-gray-600">Common Treatments: Surgery, Radiation, Hormone Therapy, Chemotherapy, Targeted Therapy.</p>
+                <a href="#" class="text-red-600 font-bold mt-4 block">View More</a>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white p-6 rounded-lg shadow-md auction-card">
+                <h3 class="text-xl font-bold mb-2">Prostate Cancer</h3>
+                <p class="text-gray-600">Common Treatments: Surgery, Radiation Therapy, Hormone Therapy, Chemotherapy.</p>
+                <a href="#" class="text-red-600 font-bold mt-4 block">View More</a>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white p-6 rounded-lg shadow-md auction-card">
+                <h3 class="text-xl font-bold mb-2">Colorectal Cancer</h3>
+                <p class="text-gray-600">Common Treatments: Surgery, Chemotherapy, Radiation Therapy, Targeted Therapy.</p>
+                <a href="#" class="text-red-600 font-bold mt-4 block">View More</a>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-white p-6 rounded-lg shadow-md auction-card">
+                <h3 class="text-xl font-bold mb-2">Skin Cancer</h3>
+                <p class="text-gray-600">Common Treatments: Surgery, Radiation Therapy, Chemotherapy, Targeted Therapy.</p>
+                <a href="#" class="text-red-600 font-bold mt-4 block">View More</a>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-white p-6 rounded-lg shadow-md auction-card">
+                <h3 class="text-xl font-bold mb-2">Leukemia</h3>
+                <p class="text-gray-600">Common Treatments: Chemotherapy, Radiation Therapy, Stem Cell Transplant, Targeted Therapy.</p>
+                <a href="#" class="text-red-600 font-bold mt-4 block">View More</a>
+            </div>
+            <!-- Add more cards as needed -->
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-12">
+            <button class="bg-red-600 text-white px-8 py-3 rounded-lg hover:bg-red-700 transition-colors">
+                View More Types
+            </button>
+        </div>
+    </div>
+</body>
+</html>
+
+
