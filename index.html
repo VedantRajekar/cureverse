@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Think, plan, and track</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(145deg, #f3f4f6 0%, #ffffff 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .task-progress {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 100%;
+            background: #3b82f6;
+            border-radius: 4px;
+        }
+        .note {
+            background: #fef08a;
+            transform: rotate(-2deg);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .reminder {
+            transform: rotate(2deg);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="grid grid-cols-2 gap-0.5">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                </div>
+                <span class="font-semibold text-xl">Cureverse</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/types.html" class="text-gray-600">Infornmation</a>
+                <a href="/index.html" class="text-gray-600">Treatments</a>
+                <a href="/hospitals.html" class="text-gray-600">Hospitals</a>
+                <a href="/stories.html" class="text-gray-600">Stories</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-600">Sign in</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg"><a href="/contact.html" color="white">Contact us</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="relative">
+            <!-- Yellow Note -->
+            <div class="note absolute top-0 left-0 p-4 w-48 rounded-lg">
+                <p class="text-sm">Take notes to keep track of crucial details, and accomplish more tasks with ease.</p>
+            </div>
+
+            <!-- Reminder Card -->
+            <div class="card reminder absolute top-0 right-0 p-4 w-48">
+                <p class="text-sm font-semibold mb-2">Reminders</p>
+                <div class="space-y-2">
+                    <p class="text-sm text-gray-600">Today's Meeting</p>
+                    <p class="text-sm text-blue-600">13:00 - 13:45</p>
+                </div>
+            </div>
+
+            <!-- Central Content -->
+            <div class="text-center pt-24 pb-16">
+                <h1 class="text-5xl font-bold mb-4">Think, plan, and track</h1>
+                <h2 class="text-4xl text-gray-500 mb-8">all in one place</h2>
+                <p class="text-gray-600 mb-8">Efficiently manage your tasks and boost productivity.</p>
+                <button class="bg-blue-600 text-white px-6 py-3 rounded-lg"><a href="/contact.html" color="white">Contact us</a></button>
+            </div>
+
+            <!-- Task Card -->
+            <div class="card absolute bottom-0 left-0 p-4 w-64">
+                <h3 class="font-semibold mb-4">Today's tasks</h3>
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>New ideas for campaign</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="task-progress">
+                            <div class="progress-bar" style="width: 40%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-2">
+                            <span>Design PPT #4</span>
+                            <span>112%</span>
+                        </div>
+                        <div class="task-progress">
+                            <div class="progress-bar" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrations Card -->
+            <div class="card absolute bottom-0 right-0 p-4 w-48">
+                <h3 class="font-semibold mb-4">100+ Integrations</h3>
+                <div class="flex space-x-2">
+                    <img src="/api/placeholder/32/32" alt="Gmail" class="w-8 h-8 rounded">
+                    <img src="/api/placeholder/32/32" alt="Slack" class="w-8 h-8 rounded">
+                    <img src="/api/placeholder/32/32" alt="Calendar" class="w-8 h-8 rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

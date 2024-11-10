@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitals Near Me - Cancer Awareness</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(145deg, #f3f4f6 0%, #ffffff 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .header-bg {
+            background-color: #FF33F6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="grid grid-cols-2 gap-0.5">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                </div>
+                <span class="font-semibold text-xl">Cureverse</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/types.html" class="text-gray-600">Information</a>
+                <a href="/index.html" class="text-gray-600">Treatments</a>
+                <a href="/hospitals.html" class="text-gray-600">Hospitals</a>
+                <a href="/stories.html" class="text-gray-600">Stories</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-600">Sign in</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg"><a href="/contact.html" color="white">Contact us</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center pb-16">
+            <h1 class="text-5xl font-bold mb-4 text-pink-600">Hospitals Near Me</h1>
+            <p class="text-xl text-gray-600">Find nearby hospitals that specialize in cancer treatment and care.</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="flex justify-center mb-8">
+            <input type="text" class="p-4 border border-gray-300 rounded-lg w-1/2" placeholder="Enter your location...">
+            <button class="bg-blue-600 text-white px-6 py-3 ml-4 rounded-lg">Search</button>
+        </div>
+
+        <!-- Hospital List -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Hospital Card 1 -->
+            <div class="card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">City General Hospital</h3>
+                <p class="text-gray-600 mb-4">Specializes in cancer treatment, with cutting-edge therapies and expert oncology specialists.</p>
+                <p class="text-gray-600 mb-4">Location: 123 Cancer St, Cityville</p>
+                <p class="text-gray-600 mb-4">Phone: (123) 456-7890</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">View Details</button>
+            </div>
+
+            <!-- Hospital Card 2 -->
+            <div class="card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">National Cancer Institute</h3>
+                <p class="text-gray-600 mb-4">A leading institution for advanced cancer research and treatment, with world-renowned oncologists.</p>
+                <p class="text-gray-600 mb-4">Location: 456 Treatment Ave, Medcity</p>
+                <p class="text-gray-600 mb-4">Phone: (987) 654-3210</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">View Details</button>
+            </div>
+
+            <!-- Hospital Card 3 -->
+            <div class="card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Hope Cancer Center</h3>
+                <p class="text-gray-600 mb-4">Comprehensive cancer care with a focus on patient well-being, providing support at every stage.</p>
+                <p class="text-gray-600 mb-4">Location: 789 Wellness Blvd, Healthtown</p>
+                <p class="text-gray-600 mb-4">Phone: (555) 123-4567</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">View Details</button>
+            </div>
+
+            <!-- Hospital Card 4 -->
+            <div class="card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Greenwood Oncology Center</h3>
+                <p class="text-gray-600 mb-4">Leading hospital in cancer treatments, with state-of-the-art equipment and research-backed therapies.</p>
+                <p class="text-gray-600 mb-4">Location: 101 Greenfield Rd, Oakpark</p>
+                <p class="text-gray-600 mb-4">Phone: (234) 567-8901</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">View Details</button>
+            </div>
+
+            <!-- Hospital Card 5 -->
+            <div class="card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Starlight Cancer Institute</h3>
+                <p class="text-gray-600 mb-4">A renowned institute providing innovative cancer therapies and personalized care plans for patients.</p>
+                <p class="text-gray-600 mb-4">Location: 202 Starview Dr, Radiance</p>
+                <p class="text-gray-600 mb-4">Phone: (432) 678-9012</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">View Details</button>
+            </div>
+
+            <!-- Hospital Card 6 -->
+            <div class="card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">CureWell Hospital</h3>
+                <p class="text-gray-600 mb-4">Offering holistic care and specialized oncology services, with a compassionate and skilled team.</p>
+                <p class="text-gray-600 mb-4">Location: 345 Care St, Wellnesscity</p>
+                <p class="text-gray-600 mb-4">Phone: (654) 321-0987</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">View Details</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancer Stories - Cancer Awareness</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(145deg, #f3f4f6 0%, #ffffff 100%);
+        }
+        .card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .story-card {
+            margin-bottom: 1.5rem;
+        }
+        .header-bg {
+            background-color: #FF33F6;
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="grid grid-cols-2 gap-0.5">
+                    <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                    <div class="w-2 h-2 bg-gray-900 rounded-full"></div>
+                </div>
+                <span class="font-semibold text-xl">Cureverse</span>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="/types.html" class="text-gray-600">Information</a>
+                <a href="/index.html" class="text-gray-600">Treatments</a>
+                <a href="/hospitals.html" class="text-gray-600">Hospitals</a>
+                <a href="/stories.html" class="text-gray-600">Stories</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-600">Sign in</button>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg"><a href="/contact.html" color="white">Contact us</a></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center pb-16">
+            <h1 class="text-5xl font-bold mb-4 text-pink-600">Cancer Overcomers Stories</h1>
+            <p class="text-xl text-gray-600">Read inspiring stories of individuals who have battled cancer and emerged stronger.</p>
+        </div>
+
+        <!-- Story Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="story-card card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Jane's Journey</h3>
+                <p class="text-gray-600 mb-4">"I was diagnosed with breast cancer, but with the support of my family and a determined mindset, I overcame it."</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">Read Full Story</button>
+            </div>
+
+            <div class="story-card card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Mark's Triumph</h3>
+                <p class="text-gray-600 mb-4">"My battle with leukemia seemed impossible, but with medical advancements and faith, I made it through."</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">Read Full Story</button>
+            </div>
+
+            <div class="story-card card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Sophia's Strength</h3>
+                <p class="text-gray-600 mb-4">"I fought ovarian cancer with resilience and now I use my story to inspire others who are struggling."</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">Read Full Story</button>
+            </div>
+
+            <div class="story-card card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Chris's Battle</h3>
+                <p class="text-gray-600 mb-4">"Despite being diagnosed with stage 4 lung cancer, I fought against all odds and came out victorious."</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">Read Full Story</button>
+            </div>
+
+            <div class="story-card card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">Lily's Recovery</h3>
+                <p class="text-gray-600 mb-4">"With the help of my treatment team, I was able to defeat cervical cancer and live a healthy life."</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">Read Full Story</button>
+            </div>
+
+            <div class="story-card card p-6">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-4">David's Resilience</h3>
+                <p class="text-gray-600 mb-4">"Overcoming testicular cancer was the hardest thing I ever did, but now I'm cancer-free and stronger than ever."</p>
+                <button class="bg-pink-600 text-white px-4 py-2 rounded-lg">Read Full Story</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
